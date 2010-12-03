@@ -5,7 +5,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.3.0
-Release:	%mkrel 7
+Release:	%mkrel 8
 Summary:	Common file and directory routines
 License:	PHP License
 Group:		Development/PHP
