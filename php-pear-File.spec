@@ -3,10 +3,10 @@
 
 %define		_requires_exceptions pear(PHPUnit.php)
 
+Summary:	Common file and directory routines
 Name:		php-pear-%{upstream_name}
 Version:	1.4.0
-Release:	%mkrel 1
-Summary:	Common file and directory routines
+Release:	%mkrel 2
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/File/
@@ -16,12 +16,13 @@ Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	php-pear
+Suggests:	php-pear-File_Util
+Suggests:	php-pear-File_CSV
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
-Provides easy access to read/write to files along with some common
-routines to deal with paths. Also provides interface for handling CSV
-files.
+Provides easy access to read/write to files along with some common routines
+to deal with paths.
 
 %prep
 %setup -q -c
