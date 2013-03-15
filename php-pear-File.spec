@@ -4,7 +4,7 @@
 Summary:	Common file and directory routines
 Name:		php-pear-%{upstream_name}
 Version:	1.4.0
-Release:	%mkrel 4
+Release:	6
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/File/
@@ -16,7 +16,6 @@ BuildArch:	noarch
 BuildRequires:	php-pear
 Suggests:	php-pear-File_Util
 Suggests:	php-pear-File_CSV
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Provides easy access to read/write to files along with some common routines
@@ -27,7 +26,6 @@ to deal with paths.
 mv package.xml %{upstream_name}-%{version}/%{upstream_name}.xml
 
 %install
-rm -rf %{buildroot}
 
 cd %{upstream_name}-%{version}
 pear install --nodeps --packagingroot %{buildroot} %{upstream_name}.xml
@@ -40,7 +38,6 @@ install -d %{buildroot}%{_datadir}/pear/packages
 install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 %clean
-rm -rf %{buildroot}
 
 
 
