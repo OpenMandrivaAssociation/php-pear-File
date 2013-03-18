@@ -3,12 +3,12 @@
 
 Summary:	Common file and directory routines
 Name:		php-pear-%{upstream_name}
-Version:	1.4.0
-Release:	6
+Version:	1.4.1
+Release:	1
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/File/
-Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tgz
+Source0:	http://download.pear.php.net/package/File-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -148,4 +148,5 @@ install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 * Thu Jan 20 2005 Pascal Terjan <pterjan@mandrake.org> 1.1.0-0.RC3.1mdk
 - First mdk package
+
 
