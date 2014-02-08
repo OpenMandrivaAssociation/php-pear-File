@@ -4,7 +4,7 @@
 Summary:	Common file and directory routines
 Name:		php-pear-%{upstream_name}
 Version:	1.4.1
-Release:	1
+Release:	2
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/File/
