@@ -7,7 +7,7 @@ Version:	1.4.1
 Release:	11
 License:	PHP License
 Group:		Development/PHP
-Url:		http://pear.php.net/package/File/
+Url:		https://pear.php.net/package/File/
 Source0:	http://download.pear.php.net/package/File-%{version}.tgz
 BuildArch:	noarch
 BuildRequires:	php-pear
